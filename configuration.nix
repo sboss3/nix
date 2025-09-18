@@ -86,6 +86,13 @@
 
     # Legacy driver for my Geforce GT 430
     package = config.boot.kernelPackages.nvidiaPackages.legacy_390;
+
+    prime = {
+      sync.enable = true;
+
+      intelBusId = "PCI:0:2:0";
+      nvidiaBusId = "PCI:1:0:0";
+    };
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
